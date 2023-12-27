@@ -1,0 +1,7 @@
+with open("weather.txt", "r") as file:
+  a = float(file.readline())
+  b = float(file.readline())
+  c = float(file.readline())
+def w_m(x):
+  return a * x**2 + b * x + c
+print(w_m(7))
