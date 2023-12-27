@@ -1,0 +1,21 @@
+def solve_quadratic(coefficients, x):
+  a, b, c = coefficients
+  result = a * x * 2 + b * x + c
+  return result
+
+def main():
+  # Get coefficients from the user as a list
+  coefficients = [
+      float(input("Enter coefficient a: ")),
+      float(input("Enter coefficient b: ")),
+      float(input("Enter coefficient c: "))
+  ]
+  # Get the value of x
+  x = float(input("Enter the value of x: "))
+  # Solve the quadratic equation for the given x and coefficients
+  result = solve_quadratic(coefficients, x)
+  # Display the result
+  print({result})
+
+if __name__ == "__main__":
+  main()
